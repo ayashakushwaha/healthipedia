@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-size: larger;
+    background-color: aliceblue;
+  }
+  label {
+    text-align: left;
+    width: 55%;
+  }
+  input {
+    width: 42%;
+  }
+  .card {
+    background-color: rgb(99, 150, 194);
+    border: 2px solid rgb(104, 104, 242);
+    height: fit-content;
+    width: fit-content;
+    color: white;
+  }
+  .form {
+    text-align: left;
+  }
+  .fa-footer:hover {
+    transform: scale(1.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition-duration: 120ms;
+  }
+  

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- css-file -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- FONT-AWESOME-FILE -->
+    <script
+      src="https://kit.fontawesome.com/61bfe18a64.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- java bootstrap script file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid bar-clr">
+          <a
+            class="navbar-brand"
+            href="/"
+            style="display: flex; align-items: center"
+          >
+            <img
+              src="/static/images/healthcare.gif"
+              alt="Logo"
+              width="60"
+              height="50"
+              class="d-inline-block align-text-top"
+              style="margin-right: 7%"
+            />
+            Healthipedia
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Appointment </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Disease
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#Alzheimer">Alzheimer</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#breastCancer"
+                      >Breast Cancer</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#brainTumar">Brain Tumar</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#bmiCalculator"
+                      >BMI Calculator</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#covid-19"> Covid-19</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#diabetes">Diabetes</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#glaucoma">Glaucoma</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#heartDisease"
+                      >Heart Disease</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#kidneyTumar"
+                      >Kidney Tumar</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#liverDisease"
+                      >Liver Disease</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#malaria">Malaria</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex nav-margin" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="know your disease.."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+    <!-- title -->
+    <div class="container-fluid" id="title">
+      <div class="row">
+        <div class="col">
+          <h1>
+            We are here so that you and your loved ones could lead a healthy
+            life.
+          </h1>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img class="title-image" src="/static/images/bg-image.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- image cards -->
+    <div class="container-fluid sec-2">
+      <h2>Feeling sick ,let's take a test.</h2>
+      <p>
+        We have attacted some tests below so that u can be sure and start taking
+        a medication if needed .
+      </p>
+      <section id="image-cards">
+        <div class="row justify-content-md-center">
+          <div class="col">
+            <div class="card" id="Alzheimer">
+              <img
+                src="/static/images/Alzheimer.png"
+                class="card-img-top"
+                alt="Alzheimer Disease"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alzheimer Disease Diagnosis</h5>
+                <hr />
+                <a href="/alzheimer" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="breastCancer">
+              <img
+                src="/static/images/breast-cancer-1.jpg"
+                class="card-img-top"
+                alt="breast-cancer"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Breast Cancer Prediction</h5>
+                <hr />
+                <a href="/breast-cancer" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="brainTumor">
+              <img
+                src="/static/images/brain-tumor.jpg"
+                class="card-img-top"
+                alt="Brain Tumor"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Brain Tumor Detection</h5>
+                <hr />
+                <a href="/brain-tumor" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="bmiCalculator">
+              <img
+                src="/static/images/BMI-Calculator-1.png"
+                class="card-img-top"
+                alt="BMI Calculator"
+              />
+              <div class="card-body">
+                <h5 class="card-title">BMI Calculator</h5>
+                <hr />
+                <a href="/bmi-calculator" class="btn btn-primary"
+                  >Take Test</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="covid-19">
+              <img
+                src="/static/images/covid-19.jpg"
+                class="card-img-top"
+                alt="covid-19"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Covid-19</h5>
+                <hr />
+                <a href="/covid" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="diabetes">
+              <img
+                src="/static/images/diabeties.jpg"
+                class="card-img-top"
+                alt="diabeties"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Daibetes</h5>
+                <hr />
+                <a href="/diabetes" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="glaucoma">
+              <img
+                src="/static/images/glaucoma.jpg"
+                class="card-img-top"
+                alt="Glaucoma"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glaucoma</h5>
+                <hr />
+                <a href="/glaucoma" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="heartDisease">
+              <img
+                src="/static/images/heart-disease.jpg"
+                class="card-img-top"
+                alt="heart-disease"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Heart Disease</h5>
+                <hr />
+                <a href="/heart-disease" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="kidneyTumor">
+              <img
+                src="/static/images/kidney-tumor.jpg"
+                class="card-img-top"
+                alt="kidney-tumor"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kidney Tumor</h5>
+                <hr />
+                <a href="/kidney-tumor" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="liverDisease">
+              <img
+                src="/static/images/liver-disease.jpg"
+                class="card-img-top"
+                alt="liver-disease"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Liver Disease</h5>
+                <hr />
+                <a href="/liver-disease" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="malaria">
+              <img
+                src="/static/images/malaria.png"
+                class="card-img-top"
+                alt="malaria"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Malaria</h5>
+                <hr />
+                <a href="/malaria" class="btn btn-primary">Take Test</a>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </section>
+    </div>
+    <!-- <script>
+      var cards = document.getElementsByClassName("card");
+      for (var i of cards) {
+        i.addEventListener("mouseover", function (event) {
+          var audio = new Audio("audios/pop.mp3");
+          audio.play();
+        });
+      }
+    </script> -->
+  </body>
+  <footer id="footer" style="margin: 3rem auto">
+    <a
+      class="fa-brands fa-twitter fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+      href=""
+    ></a>
+    <a
+      class="fa-brands fa-facebook fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-brands fa-instagram fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-solid fa-envelope fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+
+    <p>© Copyright Healthipedia</p>
+  </footer>
+</html>

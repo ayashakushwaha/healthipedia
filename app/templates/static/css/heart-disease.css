@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  font-family: "Monteserrat", sans-serif;
+  background-color: #d9eef7;
+}
+
+.navbar {
+  background-color: #c0d5ff;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #146c94;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.main-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  font-weight: 900;
+  color: #000000;
+  padding: 40px 50px;
+}
+
+.blocking {
+  margin: 30px 80px;
+}
+
+.selection {
+  padding: 5px 30px;
+}
+
+input {
+  padding: 5px 30px;
+}
+
+label {
+  text-align: right;
+  position: relative;
+  right: 100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  label {
+    text-align: center;
+    position: relative;
+    right: auto;
+    left: auto;
+  }
+}
+
+input::placeholder {
+  text-align: left;
+  font-weight: 600;
+  color: grey;
+}
+
+.submit-button {
+  margin: 20px 30px;
+  width: 200px;
+  color: #245216;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* .radio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+} */

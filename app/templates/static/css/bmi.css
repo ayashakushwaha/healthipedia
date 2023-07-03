@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    background-color: aliceblue;
+  }
+  .bmi-card {
+    height: 25rem;
+    width: 25rem;
+    margin-top: 5%;
+    background-color: #e5e0ff;
+    font-size: larger;
+  }
+  #output {
+    height: 4.5rem;
+    width: 18rem;
+    border: solid grey;
+    font-size: medium;
+    margin-top: 2rem;
+    background-color: white;
+    color: grey;
+  }
+  .output {
+    color: black;
+  }
+  .fa-footer:hover {
+    transform: scale(1.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition-duration: 120ms;
+  }
+  

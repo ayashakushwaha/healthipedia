@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="/static/css/liver.css" rel="stylesheet" />
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@400;900&family=Raleway&family=Sacramento&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Healthipedia</title>
+    <!-- FONT-AWESOME-FILE -->
+    <script
+      src="https://kit.fontawesome.com/61bfe18a64.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid bar-clr">
+          <a
+            class="navbar-brand"
+            href="/"
+            style="display: flex; align-items: center"
+          >
+            <img
+              src="/static/images/healthcare.gif"
+              alt="Logo"
+              width="60"
+              height="50"
+              class="d-inline-block align-text-top"
+              style="margin-right: 7%"
+            />
+            Healthipedia
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Appointment </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Disease
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#Alzheimer">Alzheimer</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#breastCancer"
+                      >Breast Cancer</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#brainTumar">Brain Tumar</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#bmiCalculator"
+                      >BMI Calculator</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#covid-19"> Covid-19</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#diabetes">Diabetes</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#glaucoma">Glaucoma</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#heartDisease"
+                      >Heart Disease</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#kidneyTumar"
+                      >Kidney Tumar</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#liverDisease"
+                      >Liver Disease</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#malaria">Malaria</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex nav-margin" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="know your disease.."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <section id="main-content">
+      <h1 class="main-heading">Liver-Disease Prediction</h1>
+      <form id="main-form" method="GET" action="/liver-disease/result">
+        <div class="blocking row">
+          <label class="col-lg-6 col-md-12">Age : </label>
+          <input
+            class="col-lg-6 age-input"
+            id="age"
+            name="age"
+            type="text"
+            placeholder="Enter your age here.."
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Gender : </label>
+          <select class="selection col-lg-6" name="gender">
+            <option value="">Select Any :</option>
+            <option value="0" id="female">Female</option>
+            <option value="1" id="male">Male</option>
+            <option value="2" id="transgender">Transgender</option>
+          </select>
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Total Bilirubin</label
+          ><input
+            class="col-lg-6"
+            type="text"
+            name="bilirubin"
+            placeholder="milligram per deciliter(mg/dL)"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Direct Bilirubin</label
+          ><input
+            class="col-lg-6"
+            type="text"
+            name="direct_bilirubin"
+            placeholder="milligram per deciliter(mg/dL)"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Alkaline Phosphate : </label
+          ><input
+            class="col-lg-6"
+            type="text"
+            name="phosphate"
+            placeholder="milligram per deciliter(mg/dL)"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Alanine Aminotransferase : </label
+          ><input
+            class="col-lg-6"
+            type="text"
+            name="aminotransferase"
+            placeholder="units per litre(U/L)"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Aspertate Aminotransferase : </label
+          ><input
+            class="col-lg-6"
+            type="text"
+            placeholder="units per(U/L)"
+            name="aspertate"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Total Proteins : </label
+          ><input
+            class="col-lg-6"
+            type="text"
+            placeholder="gram per deciliter(g/dL)"
+            name="protein"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6 albumin">Albumin : </label
+          ><input
+            class="col-lg-6"
+            type="text"
+            name="albumin"
+            placeholder="gram per deciliter(g/dL)"
+          />
+        </div>
+        <div class="blocking row">
+          <label class="col-lg-6">Albumin and Globulin ratio : </label
+          ><input
+            class="col-lg-6"
+            type="text"
+            placeholder=""
+            name="globulin"
+          />
+        </div>
+        <input
+          type="submit"
+          class="btn btn-lg btn-outline-dark submit-button"
+        />
+      </form>
+      <button class="btn btn-lg btn-warning reset-button">Reset</button>
+    </section>
+  </body>
+  <footer id="footer" style="margin: 3rem auto">
+    <a
+      class="fa-brands fa-twitter fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-brands fa-facebook fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-brands fa-instagram fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-solid fa-envelope fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+
+    <p style="color: grey">© Copyright Healthipedia</p>
+  </footer>
+  <script>
+     document.getElementById("main-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        var datapoint = [];
+        for(var input of document.getElementById("main-form").querySelectorAll("[name]")) {
+          datapoint.push(input.value);
+        }
+        window.location.href = "/liver-disease/result?data="+encodeURIComponent(datapoint.join(","));
+    });
+  </script>
+</html>

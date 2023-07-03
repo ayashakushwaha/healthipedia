@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bmi-calculator</title>
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <!--css file-->
+    <link rel="stylesheet" href="/static/css/covid.css" />
+       <!-- FONT-AWESOME-FILE -->
+    <script
+      src="https://kit.fontawesome.com/61bfe18a64.js"
+      crossorigin="anonymous"
+    ></script>
+        <!-- bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+    <!-- Nav Bar -->
+    <nav
+      class="navbar navbar-expand-lg bg-info"
+      style="width: 100%; padding-left: 5%; padding-right: 5%"
+    >
+      <a
+        class="navbar-brand ms-auto"
+        href="/"
+        style="display: flex; align-items: center; color: white"
+      >
+        <img
+          src="/static/images/healthcare.gif"
+          class="d-inline-block align-text-top"
+          style="margin-right: 0.7rem; width: 60px; height: 50px"
+        />
+        Healthipedia</a
+      >
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="appointment"
+              >Appointment</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#footer"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <center><h1>Covid 19 Diagnosis</h1></center>
+    <div class="card container-fluid bmi-card ms-auto me-auto" >
+    <div class="card-body">
+    <h3 class="card-title">Upload Lung MRI Image</h1>
+    <hr>
+    <p class="card-text">   
+      <img src="{{img_url}}" alt="" srcset="">
+      {% if prediction == 0 %}
+      <p class="age">Report : <span id="result-gender">Your MRI scans show that you have covid, please visit a Doctor immediately.</span></p>
+      {% else %}
+      <p class="age">Report : <span id="result-gender">Your MRI scans show that you DON'T have covid.</span></p>
+      {% endif %}
+    </p>
+    <br>
+    <br>
+  </div>
+  </body>
+  <footer id="footer" style="margin: 3rem auto">
+    <a
+      class="fa-brands fa-twitter fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-brands fa-facebook fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-brands fa-instagram fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+    <a
+      class="fa-solid fa-envelope fa-footer"
+      style="margin: 0.7rem; text-decoration: none"
+    ></a>
+
+    <p style="color: grey">© Copyright Healthipedia</p>
+  </footer>
+</html>
+
+
+
+
